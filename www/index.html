@@ -17,9 +17,12 @@
     <p>Welcome! This is page one! If you click on the link below, it will take you to Page Two.</p>
   </div>
     
-<div data-role="panel" id="myPanel">
+<div data-role="panel" id="myPanel" data-display="overlay">
   <h2>Left panel</h2>
   <p>you have opened the left panel.>
+  <a href="#pageone" data-role="button">Go to Page One</a>
+  <a href="#pagetwo" data-role="button">Go to Page Two</a>
+  <a href="#pagethree" data-role="button">Go to Page three</a>
 </div>
 
   <div data-role="footer" data-position="fixed">
@@ -39,9 +42,18 @@
     <p>This is Page Two. If you click on the link below, it will take you to Page three.</p>
   </div>
 
+    <div data-role="panel" id="myPanel" data-display="reveal">
+  <h2>Left panel</h2>
+  <p>you have opened the left panel.>
+  <a href="#pageone" data-role="button">Go to Page One</a>
+  <a href="#pagetwo" data-role="button">Go to Page Two</a>
+  <a href="#pagethree" data-role="button">Go to Page three</a>
+</div>
+    
   <div data-role="footer" data-position="fixed">
     <a href="#pagethree">Go to Page three</a>
     <a href="#pageone">Go to Page One</a>
+    <a href="#myPanel">open left panel</a>
     <h1>Footer Text</h1>
   </div>
 </div> 
@@ -55,9 +67,18 @@
     <p>This is Page Three. If you click on the link below, it will take you to Page One.</p>
   </div>
 
+    <div data-role="panel" id="myPanel" data-display="push">
+  <h2>Left panel</h2>
+  <p>you have opened the left panel.>
+  <a href="#pageone" data-role="button">Go to Page One</a>
+  <a href="#pagetwo" data-role="button">Go to Page Two</a>
+  <a href="#pagethree" data-role="button">Go to Page three</a>
+</div>    
+        
   <div data-role="footer" data-position="fixed">
         <a href="#pageone">Go to Page One</a>
         <a href="#pagetwo">Go to Page Two</a>
+        <a href="#myPanel">open left panel</a>
     <h1>Footer Text</h1>
   </div>
 </div> 
