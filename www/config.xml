@@ -9,11 +9,11 @@
     <name>Application navigation test</name>
 
     <description>
-        A sample application that test the navigation on a mobile application
+        Worcester stands tall event application
     </description>
 
-    <author href="worcester.ac.uk" email="c.bowers@worc.ac.uk">
-        WBS Computing
+    <author href="worcester.ac.uk" email="hako1+15@uni.worc.ac.uk">
+        university of worcester
     </author>
 
     <preference name="phonegap-version" value="cli-7.0.1" />

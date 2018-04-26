@@ -2,16 +2,23 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+                        body  {
+                           text-align: center;  
+                           background-color: darkgoldenrod !important;
+                        }  
+            
+    
+        </style>  
+        
+        
             <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
                 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
                 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-                    <style>
-                        body  {
-                           text-align: center;    
-                        }  
-                    </style>    
+  
     </head>
+    
+    
         <body>
 
             <div data-role="page" id="pageone">
@@ -19,25 +26,29 @@
                     <h1>Worcester Stands Tall</h1>
                 </div>
 
-                    <div data-role="main" class="ui-content">
-                        <H1>Title Page</H1>
-                        <a href="#pagetwo">Start Game</a>
-                            <br/>
-                        <a href="#pagethree">Options</a>
-                            <br/>
-                        <a href="#myPanel1">Side panel</a>
+                    <div data-role="main" class="ui-content" >
+                        <H1>Welcome</H1>
+                         <p>the worcester stands tall event is a event about giraffes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur placerat ultrices. In vulputate ante vel turpis tincidunt porta. Vivamus eu enim quis odio commodo elementum. Nunc tincidunt facilisis lacinia. Quisque cursus leo a ipsum pellentesque, a faucibus tortor rhoncus. Donec finibus mattis metus in commodo. Donec a vestibulum mauris. Nullam sit amet velit lectus. Nulla suscipit lectus dignissim tellus efficitur, convallis tristique erat hendrerit. Praesent viverra, nunc eu imperdiet semper, tellus neque rhoncus nisi, eu maximus sem enim quis erat. Morbi sagittis nisi non lacus lobortis ullamcorper. Etiam eget nunc sagittis, bibendum massa at, ullamcorper nisi. Maecenas pulvinar ante et tortor ultrices, eget mollis justo sagittis.</p>
+                        
+                        <H2>How To Use</H2>
+                         <p>To use this application you need to turn on your. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur placerat ultrices. In vulputate ante vel turpis tincidunt porta. Vivamus eu enim quis odio commodo elementum. Nunc tincidunt facilisis lacinia. Quisque cursus leo a ipsum pellentesque, a faucibus tortor rhoncus. Donec finibus mattis metus in commodo. Donec a vestibulum mauris. Nullam sit amet velit lectus. Nulla suscipit lectus dignissim tellus efficitur, convallis tristique erat hendrerit. Praesent viverra, nunc eu imperdiet semper, tellus neque rhoncus nisi, eu maximus sem enim quis erat. Morbi sagittis nisi non lacus lobortis ullamcorper. Etiam eget nunc sagittis, bibendum massa at, ullamcorper nisi. Maecenas pulvinar ante et tortor ultrices, eget mollis justo sagittis.</p>
                     </div>
     
                     <div data-role="panel" id="myPanel1" data-display="overlay">
                         <h2>Left panel</h2>
                             <p>you have opened the left panel.>
-                                <a href="#pageone" data-role="button">Start game</a>
-                                <a href="#pagetwo" data-role="button">options</a>
-                                <a href="#pagethree" data-role="button">Go to Page three</a>
+                                <a href="#pageone" data-role="button">Info</a>
+                                <a href="#pagetwo" data-role="button">NFC</a>
+                                <a href="#pagethree" data-role="button">page 3?</a>
                     </div>
 
                     <div data-role="footer" data-position="fixed">
-    
+                            <H1>Title Page</H1>
+                        <a href="#pagetwo">Info</a>
+                          
+                        <a href="#pagethree">NFC</a>
+                            
+                        <a href="#myPanel1">Side panel</a>
                         <h1>University project</h1>
                     </div>
             </div> 
@@ -46,24 +57,24 @@
             
             <div data-role="page" id="pagetwo"> <!-- start game page -->
                 <div data-role="header">
-                    <h1>start game page</h1>
+                    <h1>Info page</h1>
                 </div>
 
                 <div data-role="main" class="ui-content">
-                    <p>this is the page you get for clicking start game </p>
+                    <p>this page gives you information of the event and links to the worcester stands tall wepage.</p>
                 </div>
 
                 <div data-role="panel" id="myPanel2" data-display="reveal">
                     <h2>Left panel</h2>
                         <p>you have opened the left panel.>
-                        <a href="#pageone" data-role="button">Go to Page One</a>
+                        <a href="#pageone" data-role="button">Title page</a>
                         <a href="#pagetwo" data-role="button">Go to Page Two</a>
                         <a href="#pagethree" data-role="button">Go to Page three</a>
                 </div>
     
                 <div data-role="footer" data-position="fixed">
-                    <a href="#pagethree">Go to Page three</a>
-                    <a href="#pageone">Go to Page One</a>
+                    <a href="#pagethree">NFC</a>
+                    <a href="#pageone">Title page</a>
                     <a href="#myPanel2">open left panel</a>
                     <h1>Footer Text</h1>
                 </div>
@@ -75,24 +86,24 @@
     
             <div data-role="page" id="pagethree"> <!-- Options page -->
                 <div data-role="header">
-                    <h1>Options Page</h1>
+                    <h1>NFC</h1>
                 </div>
 
                 <div data-role="main" class="ui-content">
-                    <p>This is Page Three. If you click on the link below, it will take you to Page One.</p>
+                    <p>this page shows all the info you have gained from the statues.</p>
                 </div>
 
                 <div data-role="panel" id="myPanel3" data-display="push">
                     <h2>Left panel</h2>
                         <p>you have opened the left panel.>
-                        <a href="#pageone" data-role="button">Go to Page One</a>
-                        <a href="#pagetwo" data-role="button">Go to Page Two</a>
-                        <a href="#pagethree" data-role="button">Go to Page three</a>
+                        <a href="#pageone" data-role="button">title Page</a>
+                        <a href="#pagetwo" data-role="button">Info</a>
+                        <a href="#pagethree" data-role="button">NFC</a>
                 </div>    
         
                 <div data-role="footer" data-position="fixed">
-                    <a href="#pageone">Go to Page One</a>
-                    <a href="#pagetwo">Go to Page Two</a>
+                    <a href="#pageone">Title Page</a>
+                    <a href="#pagetwo">Info</a>
                     <a href="#myPanel3">open left panel</a>
                     <h1>Footer Text</h1>
                 </div>
