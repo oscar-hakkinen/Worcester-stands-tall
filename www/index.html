@@ -1,87 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-</head>
-<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+                <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+                <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-<div data-role="page" id="pageone">
-  <div data-role="header">
-    <h1>Welcome To My Homepage</h1>
-  </div>
+                    <style>
+                        body  {
+                           text-align: center;    
+                        }  
+                    </style>    
+    </head>
+        <body>
 
-  <div data-role="main" class="ui-content">
-    <p>Welcome! This is page one! If you click on the link below, it will take you to Page Two.</p>
-  </div>
+            <div data-role="page" id="pageone">
+                <div data-role="header">
+                    <h1>Worcester Stands Tall</h1>
+                </div>
+
+                    <div data-role="main" class="ui-content">
+                        <H1>Title Page</H1>
+                        <a href="#pagetwo">Start Game</a>
+                            <br/>
+                        <a href="#pagethree">Options</a>
+                            <br/>
+                        <a href="#myPanel1">Side panel</a>
+                    </div>
     
-<div data-role="panel" id="myPanel1" data-display="overlay">
-  <h2>Left panel</h2>
-  <p>you have opened the left panel.>
-  <a href="#pageone" data-role="button">Go to Page One</a>
-  <a href="#pagetwo" data-role="button">Go to Page Two</a>
-  <a href="#pagethree" data-role="button">Go to Page three</a>
-</div>
+                    <div data-role="panel" id="myPanel1" data-display="overlay">
+                        <h2>Left panel</h2>
+                            <p>you have opened the left panel.>
+                                <a href="#pageone" data-role="button">Go to Page One</a>
+                                <a href="#pagetwo" data-role="button">Go to Page Two</a>
+                                <a href="#pagethree" data-role="button">Go to Page three</a>
+                    </div>
 
-  <div data-role="footer" data-position="fixed">
-     <a href="#pagetwo">Go to Page Two</a>
-     <a href="#pagethree">Go to Page three</a>
-     <a href="#myPanel1">open left panel</a>
-    <h1>Footer Text</h1>
-  </div>
-</div> 
-
-<div data-role="page" id="pagetwo">
-  <div data-role="header">
-    <h1>Welcome To My Homepage</h1>
-  </div>
-
-  <div data-role="main" class="ui-content">
-    <p>This is Page Two. If you click on the link below, it will take you to Page three.</p>
-  </div>
-
-    <div data-role="panel" id="myPanel2" data-display="reveal">
-  <h2>Left panel</h2>
-  <p>you have opened the left panel.>
-  <a href="#pageone" data-role="button">Go to Page One</a>
-  <a href="#pagetwo" data-role="button">Go to Page Two</a>
-  <a href="#pagethree" data-role="button">Go to Page three</a>
-</div>
+                    <div data-role="footer" data-position="fixed">
     
-  <div data-role="footer" data-position="fixed">
-    <a href="#pagethree">Go to Page three</a>
-    <a href="#pageone">Go to Page One</a>
-    <a href="#myPanel2">open left panel</a>
-    <h1>Footer Text</h1>
-  </div>
-</div> 
+                        <h1>University project</h1>
+                    </div>
+            </div> 
+
+            <div data-role="page" id="pagetwo">
+                <div data-role="header">
+                    <h1>Welcome To My Homepage</h1>
+                </div>
+
+                <div data-role="main" class="ui-content">
+                    <p>This is Page Two. If you click on the link below, it will take you to Page three.</p>
+                </div>
+
+                <div data-role="panel" id="myPanel2" data-display="reveal">
+                    <h2>Left panel</h2>
+                        <p>you have opened the left panel.>
+                        <a href="#pageone" data-role="button">Go to Page One</a>
+                        <a href="#pagetwo" data-role="button">Go to Page Two</a>
+                        <a href="#pagethree" data-role="button">Go to Page three</a>
+                </div>
     
-    <div data-role="page" id="pagethree">
-  <div data-role="header">
-    <h1>Welcome To My Homepage</h1>
-  </div>
+                <div data-role="footer" data-position="fixed">
+                    <a href="#pagethree">Go to Page three</a>
+                    <a href="#pageone">Go to Page One</a>
+                    <a href="#myPanel2">open left panel</a>
+                    <h1>Footer Text</h1>
+                </div>
+            </div> 
+    
+    
+            <div data-role="page" id="pagethree">
+                <div data-role="header">
+                    <h1>Welcome To My Homepage</h1>
+                </div>
 
-  <div data-role="main" class="ui-content">
-    <p>This is Page Three. If you click on the link below, it will take you to Page One.</p>
-  </div>
+                <div data-role="main" class="ui-content">
+                    <p>This is Page Three. If you click on the link below, it will take you to Page One.</p>
+                </div>
 
-    <div data-role="panel" id="myPanel3" data-display="push">
-  <h2>Left panel</h2>
-  <p>you have opened the left panel.>
-  <a href="#pageone" data-role="button">Go to Page One</a>
-  <a href="#pagetwo" data-role="button">Go to Page Two</a>
-  <a href="#pagethree" data-role="button">Go to Page three</a>
-</div>    
+                <div data-role="panel" id="myPanel3" data-display="push">
+                    <h2>Left panel</h2>
+                        <p>you have opened the left panel.>
+                        <a href="#pageone" data-role="button">Go to Page One</a>
+                        <a href="#pagetwo" data-role="button">Go to Page Two</a>
+                        <a href="#pagethree" data-role="button">Go to Page three</a>
+                </div>    
         
-  <div data-role="footer" data-position="fixed">
-        <a href="#pageone">Go to Page One</a>
-        <a href="#pagetwo">Go to Page Two</a>
-        <a href="#myPanel3">open left panel</a>
-    <h1>Footer Text</h1>
-  </div>
-</div> 
+                <div data-role="footer" data-position="fixed">
+                    <a href="#pageone">Go to Page One</a>
+                    <a href="#pagetwo">Go to Page Two</a>
+                    <a href="#myPanel3">open left panel</a>
+                    <h1>Footer Text</h1>
+                </div>
+            </div> 
 
-</body>
+        </body>
 </html>
