@@ -6,6 +6,7 @@
                         body  {
                            text-align: center;  
                            background-color: darkgoldenrod;
+                            
                     
                         }  
            
@@ -15,14 +16,21 @@
                             background-position:center center;
                             background-attachment: fixed;
                             background-size:100% 100%;
-            }
-                        .ui-page {
+                            
+                            font: 15px Helvetica, sans-serif;
+                            text-shadow: 2px 2px 3px white;
+                                }
+                       
+            
+                   /*  .ui-page {
                             background: transparent;
                                  }
 
                         .ui-content{
                             background: transparent;
-    
+                    */
+            
+            
         </style>  
         
         
@@ -36,25 +44,16 @@
         <body>
 
             <div data-role="page" id="pageone" class="ui-content">
-                <div data-role="header" data-position="fixed">
-                    <h1>Worcester Stands Tall</h1>
-                </div>
+               
 
-                    <div data-role="main" >
+                    <div data-role="main" id="welcomeText">
                         <H1>Welcome</H1>
-                         <p>the worcester stands tall event is a event about giraffes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur placerat ultrices. In vulputate ante vel turpis tincidunt porta. Vivamus eu enim quis odio commodo elementum. Nunc tincidunt facilisis lacinia. Quisque cursus leo a ipsum pellentesque, a faucibus tortor rhoncus. Donec finibus mattis metus in commodo. Donec a vestibulum mauris. Nullam sit amet velit lectus. Nulla suscipit lectus dignissim tellus efficitur, convallis tristique erat hendrerit. Praesent viverra, nunc eu imperdiet semper, tellus neque rhoncus nisi, eu maximus sem enim quis erat. Morbi sagittis nisi non lacus lobortis ullamcorper. Etiam eget nunc sagittis, bibendum massa at, ullamcorper nisi. Maecenas pulvinar ante et tortor ultrices, eget mollis justo sagittis.</p>
+                         <p id="welcomparag">the worcester stands tall event is a event about giraffes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur placerat ultrices. In vulputate ante vel turpis tincidunt porta. Vivamus eu enim quis odio commodo elementum. Nunc tincidunt facilisis lacinia. Quisque cursus leo a ipsum pellentesque, a faucibus tortor rhoncus. Donec finibus mattis metus in commodo. Donec a vestibulum mauris. Nullam sit amet velit lectus. Nulla suscipit lectus dignissim tellus efficitur, convallis tristique erat hendrerit. Praesent viverra, nunc eu imperdiet semper, tellus neque rhoncus nisi, eu maximus sem enim quis erat. Morbi sagittis nisi non lacus lobortis ullamcorper. Etiam eget nunc sagittis, bibendum massa at, ullamcorper nisi. Maecenas pulvinar ante et tortor ultrices, eget mollis justo sagittis.</p>
                         
                         <H2>How To Use</H2>
                          <p>To use this application you need to turn on your. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur placerat ultrices. In vulputate ante vel turpis tincidunt porta. Vivamus eu enim quis odio commodo elementum. Nunc tincidunt facilisis lacinia. Quisque cursus leo a ipsum pellentesque, a faucibus tortor rhoncus. Donec finibus mattis metus in commodo. Donec a vestibulum mauris. Nullam sit amet velit lectus. Nulla suscipit lectus dignissim tellus efficitur, convallis tristique erat hendrerit. Praesent viverra, nunc eu imperdiet semper, tellus neque rhoncus nisi, eu maximus sem enim quis erat. Morbi sagittis nisi non lacus lobortis ullamcorper. Etiam eget nunc sagittis, bibendum massa at, ullamcorper nisi. Maecenas pulvinar ante et tortor ultrices, eget mollis justo sagittis.</p>
                     </div>
     
-                    <div data-role="panel" id="myPanel1" data-display="overlay" >
-                        <h2>Left panel</h2>
-                            <p>you have opened the left panel.>
-                                <a href="#pageone" data-role="button">Info</a>
-                                <a href="#pagetwo" data-role="button">NFC</a>
-                                <a href="#pagethree" data-role="button">page 3?</a>
-                    </div>
 
                     <div data-role="footer" data-position="fixed">
                 
@@ -63,6 +62,15 @@
                         <a href="#pagethree">NFC</a>
                             
                         <a href="#myPanel1">Side panel</a>
+                    </div>
+                
+                
+                    <div data-role="panel" id="myPanel1" data-display="overlay" >
+                        <h2>Left panel</h2>
+                            <p>you have opened the left panel.>
+                                <a href="#pageone" data-role="button">Info</a>
+                                <a href="#pagetwo" data-role="button">NFC</a>
+                                <a href="#pagethree" data-role="button">page 3?</a>
                     </div>
             </div> 
 
