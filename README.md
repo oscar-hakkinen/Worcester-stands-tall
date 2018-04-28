@@ -1,4 +1,4 @@
-phonegap-navigation-test
+Worcester-Stands-Tall
 =======================
- A PhoneGap Build application to test navigation
+ worcester stands tall mobile application that uses NFC tags to identify art pieces places around the city.
  

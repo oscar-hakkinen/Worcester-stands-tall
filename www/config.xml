@@ -6,13 +6,13 @@
         id        = "mob.app.dev.storage"
         version   = "1.0.0">
 
-    <name>Application navigation test</name>
+    <name>Worcester Stands Tall Mobile Application</name>
 
     <description>
-        Worcester stands tall event application
+       An application for researched and built for the worcester stands tall event to interact with the giraffe art statues to show additional information of them.
     </description>
 
-    <author href="worcester.ac.uk" email="hako1+15@uni.worc.ac.uk">
+    <author href="worcester.ac.uk" email="hako1_15@uni.worc.ac.uk">
         university of worcester
     </author>
 
