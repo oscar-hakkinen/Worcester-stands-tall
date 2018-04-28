@@ -11,7 +11,13 @@
             body  {
                 text-align: center;  
                   }  
-           
+           .background {
+                position: fixed;
+                top: 0%;
+                left: 0%;
+                min-width: 100%;
+                z-index: -10000;
+                        }
             
             #pageone {
                 background: transparent;
@@ -25,13 +31,7 @@
                
             } 
            
-            .background {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    min-width: 100%;
-    z-index: -10000;
-}
+            
             .ui-content {
                 font: 15px Times new roman, sans-serif;
                 text-shadow: 2px 2px 3px #cc862a;
@@ -57,7 +57,7 @@
     
     
     <body>
-        <div class="background"><img src="worcester.jpg" width="100%"/>
+        <div class="background"><img src="worcester.jpg" width="100%"/></div>
         <div data-role="page" id="pageone" >
             <div data-role="main" id="welcomeText">
                 <H1>Welcome</H1>
@@ -139,6 +139,6 @@
                         <a href="#myPanel3">open left panel</a>
                     </div>
         </div>
-            </div>
+            
      </body>
 </html>
