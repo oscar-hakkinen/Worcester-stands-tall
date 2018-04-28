@@ -1,7 +1,3 @@
-$(document).ready(function() {
-
-});
-
 var watchID;
 var map;
 var loc;
@@ -10,7 +6,7 @@ var path = [];
 
        
 
-$(document).on( "pageinit", "#pagethree", function() {
+$(document).on( "pageinit", "#pageone", function() {
     
     
     watchID = navigator.geolocation.watchPosition(onLocationSuccess, onLocationFail)
