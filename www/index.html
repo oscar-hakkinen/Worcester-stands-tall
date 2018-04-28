@@ -14,20 +14,25 @@
            
             
             #pageone {
-                background: url(worcester.jpg);
-                background-repeat:no-repeat;
-                background-position:center center;
-                background-attachment: fixed;
-                background-size:100% 100%;
+                background: transparent;
+               
+               
                 font: 15px Times new roman, sans-serif;
                 text-shadow: 2px 2px 3px #cc862a;
                         }
             .ui-panel-wrapper {
-                 background: url(worcester.jpg);
-                background-repeat:no-repeat;
-                background-position:center center;
-                background-attachment: fixed;
-                background-size:100% 100%;
+                 background: transparent;
+               
+            } 
+           
+            .background {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    min-width: 100%;
+    z-index: -10000;
+}
+            .ui-content {
                 font: 15px Times new roman, sans-serif;
                 text-shadow: 2px 2px 3px #cc862a;
             }
@@ -52,7 +57,7 @@
     
     
     <body>
-
+        <div class="background"><img src="worcester.jpg" width="100%"/>
         <div data-role="page" id="pageone" >
             <div data-role="main" id="welcomeText">
                 <H1>Welcome</H1>
@@ -134,5 +139,6 @@
                         <a href="#myPanel3">open left panel</a>
                     </div>
         </div>
+            </div>
      </body>
 </html>
