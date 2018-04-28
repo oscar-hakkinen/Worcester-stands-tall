@@ -132,26 +132,19 @@
                 <div data-role="main" class="ui-content">
                     <H1>NFC</H1>
                     <p>this page shows all the info you have gained from the statues.</p>
-                    
-                    <p>Click the button to display a time-based greeting:</p>
+                
+                    <p id="demo"></p>
 
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-        <script>
-            var test = 0;
-            
-           function myFunction() {
-    var hour = new Date().getHours(); 
-    var greeting;
-    if (hour < 18) {
-        greeting = "Good day";
-    } else {
-        greeting = "Good evening";
-    }
-    document.getElementById("demo").innerHTML = greeting;
-}            
-        </script>
+                    <script>
+                         var hour = 0; 
+                         var result
+                        if (hour == 1) {
+                            result ="good day";
+                        } else {
+                           result ="good no";
+                        }
+                        document.getElementById("demo").innerHTML = result;
+                    </script>
                     
                 </div>
 
