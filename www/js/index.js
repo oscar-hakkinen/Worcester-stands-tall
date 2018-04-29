@@ -27,7 +27,7 @@ function onLocationSuccess(position) {
     path.push(loc);
     map = new google.maps.Map(document.getElementById('map'), {
         center: loc,
-        zoom: 12,
+        zoom: 13,
         disableDefaultUI: true
     });
     
@@ -55,6 +55,27 @@ function onLocationSuccess(position) {
           position: {lat: 52.196020, lng:-2.225454}
         });
     
+    var marker3 = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          position: {lat: 52.188816, lng:-2.220716}
+        });
+    
+    var marker4 = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          position: {lat: 52.191256, lng:-2.222508}
+        });
+    
+    var marker5 = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          position: {lat: 52.195504, lng:-2.220362}
+        });
+   
     mapPath.setMap(map);
 }
 
