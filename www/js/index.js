@@ -28,6 +28,7 @@ function onLocationSuccess(position) {
     map = new google.maps.Map(document.getElementById('map'), {
         center: loc,
         zoom: 12,
+        disableDefaultUI: true
     });
     
     //sets a path that shows the location the users has travelled 
@@ -43,6 +44,7 @@ function onLocationSuccess(position) {
           map: map,
           draggable: false,
           animation: google.maps.Animation.DROP,
+        
           position: {lat: 52.191085, lng: -2.225975}
         });
         //creates another custom map marker
