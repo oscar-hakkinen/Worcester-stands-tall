@@ -22,15 +22,13 @@ $(document).on( "pageinit", "#pagethree", function() {
 function onLocationSuccess(position) {
     
     loc = new google.maps.LatLng(52.191085, -2.225975);
-    loc2 = new google.maps.LatLng(51.191085, -3.225975);
-    
-    position.coords.latitude, position.coords.longitude
+    loc2 = new google.maps.LatLng(52.196020, -2.225454);
     
     path.push(loc);
     path.push(loc2);
     map = new google.maps.Map(document.getElementById('map'), {
         center: loc,
-        zoom: 15,
+        zoom: 12,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
     
@@ -41,6 +39,20 @@ function onLocationSuccess(position) {
           strokeColor: '#FF0000',
           strokeOpacity: 1.0,
           strokeWeight: 2
+        });
+        
+    var marker = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          position: {lat: 52.191085, lng: -2.225975}
+        });
+    
+     var marker2 = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          position: {lat: 52.196020, lng:-2.225454}
         });
     
     mapPath.setMap(map);
