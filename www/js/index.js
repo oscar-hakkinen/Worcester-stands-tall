@@ -20,18 +20,19 @@ $(document).on( "pageinit", "#pagethree", function() {
 
 function onLocationSuccess(position) {
     
-    loc = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    loc = new google.maps.LatLng(52.191085, -2.225975);
     
     position.coords.latitude, position.coords.longitude
     
     path.push(loc);
     map = new google.maps.Map(document.getElementById('map'), {
         center: loc,
-        zoom: 12
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
     });
     
     
-     var mapPath = new google.maps.Polyline({
+     var mapPath = new google.maps.Marker({
           path: path,
           geodesic: true,
           strokeColor: '#FF0000',
