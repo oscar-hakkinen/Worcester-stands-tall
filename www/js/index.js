@@ -32,7 +32,7 @@ function onLocationSuccess(position) {
     });
     
     
-     var mapPath = new google.maps.Marker({
+     var mapPath = new google.maps.Polyline({
           path: path,
           geodesic: true,
           strokeColor: '#FF0000',
