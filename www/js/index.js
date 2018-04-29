@@ -5,6 +5,7 @@ $(document).ready(function() {
 var watchID;
 var map;
 var loc;
+var loc2;
 var path = [];
 
 
@@ -21,11 +22,12 @@ $(document).on( "pageinit", "#pagethree", function() {
 function onLocationSuccess(position) {
     
     loc = new google.maps.LatLng(52.191085, -2.225975);
-    loc = new google.maps.LatLng(51.191085, -3.225975);
+    loc2 = new google.maps.LatLng(51.191085, -3.225975);
     
     position.coords.latitude, position.coords.longitude
     
     path.push(loc);
+    path.push(loc2);
     map = new google.maps.Map(document.getElementById('map'), {
         center: loc,
         zoom: 15,
