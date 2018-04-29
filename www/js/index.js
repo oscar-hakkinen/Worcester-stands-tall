@@ -21,6 +21,7 @@ $(document).on( "pageinit", "#pagethree", function() {
 function onLocationSuccess(position) {
     
     loc = new google.maps.LatLng(52.191085, -2.225975);
+    loc = new google.maps.LatLng(51.191085, -3.225975);
     
     position.coords.latitude, position.coords.longitude
     
